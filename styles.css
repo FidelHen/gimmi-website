@@ -1,0 +1,57 @@
+/*
+* Custom navigation bar
+*/
+.navbar-custom {
+  background-color: white;
+  color: #1890ff;
+}
+
+.nav-link {
+  color: #8c8c8c;
+  font-weight: 400;
+}
+
+.nav-link.active {
+  color: black;
+  font-weight: 500;
+  border-bottom: 2px solid #1890ff;
+}
+
+.navbar-toggler-icon {
+  color: black;
+}
+
+.nav-link:hover {
+  color: #262626;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: black;
+  font-weight: 600;
+}
+
+.logo {
+  width: 1em;
+  height: auto;
+  padding-right: 3px;
+}
+
+/*
+* Masthead
+*/
+
+header {
+  padding-top: 3em;
+}
+
+.landing-title {
+  font-size: 5em;
+  font-weight: 700;
+  color: black;
+}
+
+.img-thumbnail {
+  width: 50%;
+  height: auto;
+}
