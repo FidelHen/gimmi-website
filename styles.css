@@ -32,7 +32,7 @@
 }
 
 .logo {
-  width: 1em;
+  width: 1.5em;
   height: auto;
   padding-right: 3px;
 }
@@ -45,13 +45,47 @@ header {
   padding-top: 3em;
 }
 
-.landing-title {
-  font-size: 5em;
-  font-weight: 700;
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.section-a {
+  margin: 2rem 0;
+}
+
+.section-a .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-a p {
+  margin: 1rem 0;
+  font-size: 1.25em;
+}
+
+.section a {
   color: black;
 }
 
-.img-thumbnail {
-  width: 50%;
+.section-a .social-button {
+  background-color: black;
+  width: 150px;
+}
+
+.section-a h1 {
+  font-style: "Roboto", sans-serif;
+  color: black;
+  font-weight: 700;
+  font-size: 4em;
+}
+
+.section-a img {
   height: auto;
+  width: 75%;
 }
