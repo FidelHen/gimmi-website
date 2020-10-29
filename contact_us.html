@@ -1,22 +1,22 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Stylesheet-->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Roboto/ Open Sans fonts -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- Bootstrap CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <title>Gimmi</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-custom">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <title>Gimmi</title>
+    </head>
+    <body class="d-flex flex-column h-100">
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a href="#" class="navbar-brand"><span><img class="logo" src="media/gimmi_logo.png"/></span>
-            </a>
+            <a href="index.html" class="navbar-brand"><span><img class="logo" src="media/gimmi_logo.png"/></span>
+                </a>
             <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar9">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,7 +27,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="works.html">How it works</a>
-                    </li>
+                    </li>   
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
@@ -38,7 +38,51 @@
             </div>
         </div>
     </nav>
-    <!-- Optional JavaScript -->
+    <!-- Navigation bar -->
+
+    <!-- Secion contact-->
+    <section class="section-contact flex-grow-1">
+        <div class="container">
+            <div class="contact-formm">
+                <p>image goes here</p>
+            </div>
+            <div class="contact-form">
+                <h1>Get in touch.</h1>
+                <p>Have an inquire or some feedback for us? Fill out the form below to contact our team.</p>
+                <form >
+                    <div class="form-name-fields">
+                        <div class="form-group">
+                            <label for="firstName">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Jane">    
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Doe">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailAddress">Email address</label>
+                        <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com" required>  
+                    </div>
+                    <div class="form-group">
+                        <label for="messageFields">Message</label>
+                        <textarea class="form-control" id="messageField" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Secion contact-->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small">
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="#"> Gimmi</a>
+        </div>
+    </footer>
+    <!-- Footer -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
