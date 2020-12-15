@@ -49,13 +49,13 @@
         <div class="container">
             <div class="contact-formm">
                 <div class="contact-image">
-                    <img src="media/business_summary_phone.png" alt="" />
+                    <img id="imgg" src="media/business_summary_phone.png" alt="" />
                 </div>
             </div>
-            <div class="contact-form">
+            <div class="contact-form" onsubmit="return contact(this)">
                 <h1>Get in touch.</h1>
                 <p>Have an inquire or some feedback for us? Fill out the form below to contact our team.</p>
-                <form >
+                <form id="form-fields">
                     <div class="form-name-fields">
                         <div class="form-group">
                             <label for="firstName">First name</label>
@@ -74,8 +74,32 @@
                         <label for="messageField">Message</label>
                         <textarea class="form-control" id="messageField" rows="4"  required></textarea>
                     </div>
-                    <button type="submit" class="btn">Submit</button>
+                    <button type="submit" class="btn" id="submit-btn">Submit</button>
                 </form>
+                  <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-dialog-centered">
+                        
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Inquiry successfully sent</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>A joke from us to you: </p>
+                                <p id="joke-setup"></p>
+                                <p id="joke-delivery"></p>
+                              </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
             </div>
         </div>
     </section>
