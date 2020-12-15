@@ -4,14 +4,13 @@ $(document).ready(function() {
     $('#googlePlayBtn').tooltip();
 
     //Plugin for images
-    $('img').hide();
-    $('img').each(function(i) {
-        if (this.complete) {
-            $(this).fadeIn();
-        } else {
-            $(this).load(function() {
-                $(this).fadeIn();
+    $("img").each(function(){
+        if (!this.complete) {
+            $(this).bind("load", function () {
+                $(this).css('opacity', '1');
             });
+        } else {
+            $(this).css('opacity', '1');
         }
     });
 

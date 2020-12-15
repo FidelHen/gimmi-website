@@ -6,6 +6,12 @@ footer {
   margin-bottom: 0.25em;
 }
 
+.fade-in-on-load {
+  opacity: 0;
+  will-change: transition;
+  transition: opacity .09s ease-out;
+}
+
 /*
 * Custom navigation bar
 */
