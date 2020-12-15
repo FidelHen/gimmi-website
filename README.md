@@ -3,3 +3,4 @@ Landing page for a mobile application. Gimmi, order in from your favorite small 
 ## Learned ##
 * Refreshed on HTML/CSS concepts
 * Simple Jquery animations
+* Send HttpRequests
