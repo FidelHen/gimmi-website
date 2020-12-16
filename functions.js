@@ -43,12 +43,17 @@ function uploadData(name, email, message) {
     $.post('https://gimmi-website-default-rtdb.firebaseio.com/inquiries.json',JSON.stringify(param),function () {
 
         //Ajax get to a joke api to lighten up as a thanks 
-        $.get('https://sv443.net/jokeapi/v2/joke/Programming,Pun?type=twopart?blacklistFlags=nsfw,racist,sexist', function(data){
+        $.get('https://sv443.net/jokeapi/v2/joke/Programming?type=twopart?blacklistFlags=nsfw,racist,sexist', function(data){
             var setup = data["setup"];
             var delivery = data["delivery"];
+
+            if (setup == null || delivery == null) {
+                $('#joke-setup').text(`${data["joke"]}`);
+            } else {
+                $('#joke-setup').text(`${setup}`);
+                $('#joke-delivery').text(`${delivery}`);
+            }
             
-            $('#joke-setup').text(`${setup}`);
-            $('#joke-delivery').text(`${delivery}`);
             $('#myModal').modal('show'); 
 
             resetForm();
