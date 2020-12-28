@@ -5,3 +5,6 @@ Landing page for a mobile application. Gimmi, order in from your favorite small 
 * Refreshed on HTML/CSS concepts
 * Simple Jquery animations
 * Send HttpRequests
+## Instructions to run ##
+1. Clone repository
+2. Open `index.html`
