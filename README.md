@@ -1,5 +1,5 @@
 ![Gimmi Landing](media/gimmi_landing.png)
-# [Gimmi](https://webpages.uncc.edu/fhenriqu/gimmi/index.html "Gimmi website link") #
+# Gimmi #
 Landing page for a mobile application with contacting features and animations.
 ## Learned ##
 * Refreshed on HTML/CSS concepts
